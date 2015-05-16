@@ -17,5 +17,5 @@ Ext.define('Sgis.view.west.WestTab1', {
 	
 	items: [{
 		xtype: 'app-default-west-tab1-tree'
-	}]	
+	}]
 });

@@ -912,6 +912,9 @@ $include-extthemeneptune-toolbar-toolbar: true;
 $include-sgis: true;
 $include-sgis-application: true;
 $include-sgis-commonmodule: true;
+$include-sgis-store-area1store: true;
+$include-sgis-store-area2store: true;
+$include-sgis-store-area3store: true;
 $include-sgis-view-center-center: true;
 $include-sgis-view-east-east: true;
 $include-sgis-view-main-main: true;
@@ -926,6 +929,7 @@ $include-sgis-view-west-westtab1: true;
 $include-sgis-view-west-westtab1tree: true;
 $include-sgis-view-west-westtab1treecontroller: true;
 $include-sgis-view-west-westtab2: true;
+$include-sgis-view-west-westtab2controller: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
