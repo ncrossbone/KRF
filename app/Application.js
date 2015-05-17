@@ -34,6 +34,11 @@ Ext.define('Sgis.Application', {
 		'Sgis.view.south.South',
 		'Sgis.view.center.Center'
 	],
+	
+	//manifest때문에 적어놈.
+	eventType:[
+	    'dynamicLayerOnOff'
+	],
 
 	launch: function () {
 		var main = Ext.widget('app-main');

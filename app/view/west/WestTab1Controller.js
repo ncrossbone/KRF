@@ -14,17 +14,21 @@ Ext.define('Sgis.view.west.WestTab1Controller', {
 	},
 	
 	onCheckChanged: function(node, checked, eOpts) {
-		SGIS.msg.alert('Selected id : ' + node.get('id') + ', text : ' + node.get('text') + ', Checked : ' + checked);
-		
+//		SGIS.msg.alert('Selected id : ' + node.get('id') + ', text : ' + node.get('text') + ', Checked : ' + checked);
 		if(!node.get('leaf')) {
 			this.checkAllChildren(node, checked);
+		}else{
+			Sgis.getApplication().fireEvent('dynamicLayerOnOff', this.getView().getChecked());
 		}
 	},
 	
 	checkAllChildren: function(node, checked) {
 		var children = node.childNodes;
-		Ext.each(children, function(child) {
+		Ext.each(children, function(child, index) {
 			child.set('checked', checked);
+			if(index==children.length-1){
+				Sgis.getApplication().fireEvent('dynamicLayerOnOff', this.getView().getChecked());
+			}
 		});
 	}
 });

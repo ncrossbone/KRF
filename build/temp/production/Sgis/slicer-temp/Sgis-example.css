@@ -7642,7 +7642,7 @@ img {
 
 /* line 93, ../../../../../ext/packages/ext-theme-base/sass/src/Component.scss */
 .x-hidden-clip {
-  position: absolute !important;
+  position: absolute!important;
   clip: rect(0, 0, 0, 0); }
 
 /* line 98, ../../../../../ext/packages/ext-theme-base/sass/src/Component.scss */
@@ -8092,7 +8092,7 @@ td.x-frame-br {
 /* line 4, ../../../../../ext/packages/ext-theme-base/sass/src/dd/DD.scss */
 .x-dd-drag-proxy,
 .x-dd-drag-current {
-  z-index: 1000000 !important;
+  z-index: 1000000!important;
   pointer-events: none; }
 
 /* line 2, ../../../../../ext/packages/ext-theme-base/sass/src/dd/StatusProxy.scss */
@@ -9428,9 +9428,9 @@ the height of a multi-line element */
 
 /* line 5, ../../../../../ext/packages/ext-theme-base/sass/src/form/field/Tag.scss */
 .x-tagfield {
-  height: auto !important;
+  height: auto!important;
   /* The wrap has to accommodate the list, so override the .x-form-text height rule */
-  padding: 0 !important;
+  padding: 0!important;
   /* Override .x-form-text padding rule */
   cursor: text;
   min-height: 24px;
@@ -9664,7 +9664,7 @@ the height of a multi-line element */
 
 /* line 1, ../../../../../ext/packages/ext-theme-base/sass/src/grid/selection/SpreadsheetModel.scss */
 .x-ssm-row-numberer-hd {
-  cursor: se-resize !important; }
+  cursor: se-resize!important; }
 
 /* line 6, ../../../../../ext/packages/ext-theme-base/sass/src/grid/selection/SpreadsheetModel.scss */
 .x-ssm-row-numberer-cell {
@@ -9823,12 +9823,12 @@ the height of a multi-line element */
   font-size: 13px;
   line-height: 17px;
   font-family: helvetica, arial, verdana, sans-serif;
-  background: whitesmoke; }
+  background: #f5f5f5; }
 
 /* line 19, ../../../../../ext/packages/ext-theme-neutral/sass/src/Component.scss */
 .x-animating-size,
 .x-collapsed {
-  overflow: hidden !important; }
+  overflow: hidden!important; }
 
 /* line 2, ../../../../../ext/packages/ext-theme-neutral/sass/src/Editor.scss */
 .x-editor .x-form-item-body {
@@ -9968,7 +9968,7 @@ the height of a multi-line element */
  */
 /* line 80, ../../../../../ext/packages/ext-theme-neutral/sass/src/ProgressBar.scss */
 .x-progress-default {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   border-width: 0;
   height: 20px;
   border-color: #157fcc; }
@@ -13275,8 +13275,8 @@ the height of a multi-line element */
 /* line 1, ../../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/Container.scss */
 .x-grid-header-ct {
   border: 1px solid #c1c1c1;
-  border-bottom-color: whitesmoke;
-  background-color: whitesmoke; }
+  border-bottom-color: #f5f5f5;
+  background-color: #f5f5f5; }
 
 /* line 14, ../../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/Container.scss */
 .x-accordion-item .x-grid-header-ct {
@@ -13309,7 +13309,7 @@ the height of a multi-line element */
   color: #666666;
   font: bold 13px/15px helvetica, arial, verdana, sans-serif;
   outline: 0;
-  background-color: whitesmoke; }
+  background-color: #f5f5f5; }
 
 /* line 21, ../../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
 .x-rtl.x-column-header {
@@ -17294,7 +17294,7 @@ div.x-border-layout-ct {
   border-width: 1px;
   border-style: solid;
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -17306,7 +17306,7 @@ div.x-border-layout-ct {
 .x-btn-default-toolbar-small-mc {
   background-image: url(images/btn/btn-default-toolbar-small-fbg.gif);
   background-position: 0 top;
-  background-color: whitesmoke; }
+  background-color: #f5f5f5; }
 
 /* line 264, ../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-nbr .x-btn-default-toolbar-small {
@@ -17510,7 +17510,7 @@ div.x-border-layout-ct {
 /* line 632, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-focus.x-btn-default-toolbar-small {
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -17562,7 +17562,7 @@ div.x-border-layout-ct {
 /* line 779, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn.x-btn-disabled.x-btn-default-toolbar-small {
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -17584,7 +17584,7 @@ div.x-border-layout-ct {
   background-image: url(images/btn/btn-default-toolbar-small-focus-sides.gif); }
 /* line 823, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-focus .x-btn-default-toolbar-small-mc {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: url(images/btn/btn-default-toolbar-small-focus-fbg.gif); }
 
 /* line 840, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
@@ -17687,7 +17687,7 @@ div.x-border-layout-ct {
   background-image: url(images/btn/btn-default-toolbar-small-disabled-sides.gif); }
 /* line 947, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn.x-btn-disabled .x-btn-default-toolbar-small-mc {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: url(images/btn/btn-default-toolbar-small-disabled-fbg.gif); }
 
 /* line 957, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
@@ -17841,7 +17841,7 @@ div.x-border-layout-ct {
   border-width: 1px;
   border-style: solid;
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -17853,7 +17853,7 @@ div.x-border-layout-ct {
 .x-btn-default-toolbar-medium-mc {
   background-image: url(images/btn/btn-default-toolbar-medium-fbg.gif);
   background-position: 0 top;
-  background-color: whitesmoke; }
+  background-color: #f5f5f5; }
 
 /* line 264, ../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-nbr .x-btn-default-toolbar-medium {
@@ -18057,7 +18057,7 @@ div.x-border-layout-ct {
 /* line 632, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-focus.x-btn-default-toolbar-medium {
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -18109,7 +18109,7 @@ div.x-border-layout-ct {
 /* line 779, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn.x-btn-disabled.x-btn-default-toolbar-medium {
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -18131,7 +18131,7 @@ div.x-border-layout-ct {
   background-image: url(images/btn/btn-default-toolbar-medium-focus-sides.gif); }
 /* line 823, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-focus .x-btn-default-toolbar-medium-mc {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: url(images/btn/btn-default-toolbar-medium-focus-fbg.gif); }
 
 /* line 840, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
@@ -18234,7 +18234,7 @@ div.x-border-layout-ct {
   background-image: url(images/btn/btn-default-toolbar-medium-disabled-sides.gif); }
 /* line 947, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn.x-btn-disabled .x-btn-default-toolbar-medium-mc {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: url(images/btn/btn-default-toolbar-medium-disabled-fbg.gif); }
 
 /* line 957, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
@@ -18388,7 +18388,7 @@ div.x-border-layout-ct {
   border-width: 1px;
   border-style: solid;
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -18400,7 +18400,7 @@ div.x-border-layout-ct {
 .x-btn-default-toolbar-large-mc {
   background-image: url(images/btn/btn-default-toolbar-large-fbg.gif);
   background-position: 0 top;
-  background-color: whitesmoke; }
+  background-color: #f5f5f5; }
 
 /* line 264, ../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-nbr .x-btn-default-toolbar-large {
@@ -18604,7 +18604,7 @@ div.x-border-layout-ct {
 /* line 632, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-focus.x-btn-default-toolbar-large {
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -18656,7 +18656,7 @@ div.x-border-layout-ct {
 /* line 779, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn.x-btn-disabled.x-btn-default-toolbar-large {
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(50%, #f5f5f5), color-stop(51%, #e8e8e8), color-stop(100%, #f5f5f5));
   background-image: -webkit-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
   background-image: -moz-linear-gradient(top, #f6f6f6, #f5f5f5 50%, #e8e8e8 51%, #f5f5f5);
@@ -18678,7 +18678,7 @@ div.x-border-layout-ct {
   background-image: url(images/btn/btn-default-toolbar-large-focus-sides.gif); }
 /* line 823, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-focus .x-btn-default-toolbar-large-mc {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: url(images/btn/btn-default-toolbar-large-focus-fbg.gif); }
 
 /* line 840, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
@@ -18781,7 +18781,7 @@ div.x-border-layout-ct {
   background-image: url(images/btn/btn-default-toolbar-large-disabled-sides.gif); }
 /* line 947, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn.x-btn-disabled .x-btn-default-toolbar-large-mc {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: url(images/btn/btn-default-toolbar-large-disabled-fbg.gif); }
 
 /* line 957, ../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
@@ -24482,7 +24482,7 @@ div.x-border-layout-ct {
   padding: 4px 6px;
   text-align: center;
   background-image: none;
-  background-color: whitesmoke; }
+  background-color: #f5f5f5; }
 
 /* line 32, ../../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
 .x-datepicker-arrow {
@@ -24491,7 +24491,7 @@ div.x-border-layout-ct {
   top: 9px;
   cursor: pointer;
   -webkit-touch-callout: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7; }
 
@@ -24603,7 +24603,7 @@ div.x-datepicker-date:hover {
 .x-monthpicker-buttons {
   padding: 3px 0;
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   text-align: center; }
   /* line 201, ../../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
   .x-datepicker-footer .x-btn,
@@ -25470,7 +25470,7 @@ a.x-color-picker-item:hover {
   border-style: solid;
   border-color: #c1c1c1;
   padding: 7px 4px;
-  background: whitesmoke;
+  background: #f5f5f5;
   cursor: pointer; }
 
 /* line 10, ../../../../../ext/packages/ext-theme-neutral/sass/src/grid/feature/Grouping.scss */
@@ -26004,10 +26004,10 @@ a.x-color-picker-item:hover {
   /* line 28, ../../../../../ext/packages/ext-theme-neutral/sass/src/grid/locking/Lockable.scss */
   .x-grid-inner-locked .x-column-header-last,
   .x-grid-inner-locked .x-grid-cell-last {
-    border-right-width: 0 !important; }
+    border-right-width: 0!important; }
   /* line 32, ../../../../../ext/packages/ext-theme-neutral/sass/src/grid/locking/Lockable.scss */
   .x-grid-inner-locked .x-rtl.x-column-header-last {
-    border-left-width: 0 !important; }
+    border-left-width: 0!important; }
 
 /* line 41, ../../../../../ext/packages/ext-theme-neutral/sass/src/grid/locking/Lockable.scss */
 .x-rtl.x-grid-inner-locked {
@@ -26607,7 +26607,7 @@ a.x-color-picker-item:hover {
 
 /* line 1, ../../../../../ext/packages/ext-theme-neutral/sass/src/selection/CheckboxModel.scss */
 .x-column-header-checkbox {
-  border-color: whitesmoke; }
+  border-color: #f5f5f5; }
 
 /* line 6, ../../../../../ext/packages/ext-theme-neutral/sass/src/selection/CheckboxModel.scss */
 .x-grid-row-checker,
@@ -26989,7 +26989,7 @@ a.x-color-picker-item:hover {
 /* line 21, ../../../../../ext/packages/ext-theme-neutral/sass/src/ux/dashboard/GoogleRssView.scss */
 .x-dashboard-googlerss-detail-header {
   position: relative;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   padding: 5px;
   border-bottom-width: 1px;
   border-bottom-color: #afafaf;
@@ -27031,7 +27031,7 @@ tr.x-grid-subtable-row {
   color: #666666;
   font: bold 13px/15px helvetica, arial, verdana, sans-serif;
   background-image: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   padding: 6px 10px 6px 10px;
   text-overflow: ellipsis; }
 

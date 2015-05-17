@@ -5,7 +5,12 @@ Ext.define('Sgis.map.CoreMap', {
 	
 	html: "<div id='_mapDiv_' style='height:100%; width:100%;background-color: #ffffff;'></div>",
 	
+	requires: [
+	           'Sgis.map.DynamicLayerAdmin'
+	],
+	
 	map:null,
+	dynamicLayerAdmin:null,
 	
 	initComponent: function() {
 		this.on('render', this.mapRendered, this);
@@ -14,8 +19,6 @@ Ext.define('Sgis.map.CoreMap', {
 	
 	mapRendered: function(p){
         var me = this;
-        
-        
         var timerId = window.setInterval(function(){
         	me.map = new esri.Map('_mapDiv_', {
     	     	isDoubleClickZoom:false,
@@ -29,6 +32,7 @@ Ext.define('Sgis.map.CoreMap', {
         	me.baseMapInit();
         	me.map.setLevel(1+6);
         	window.clearInterval(timerId);
+        	me.dynamicLayerAdmin = Ext.create('Sgis.map.DynamicLayerAdmin', me.map);
 		}, 1);
     },
     
@@ -96,5 +100,4 @@ Ext.define('Sgis.map.CoreMap', {
 		var baseMap = new CustomMapsLayer();
 		this.map.addLayer(baseMap);
 	}
-	
 });
