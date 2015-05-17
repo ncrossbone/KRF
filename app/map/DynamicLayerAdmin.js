@@ -5,7 +5,7 @@ Ext.define('Sgis.map.DynamicLayerAdmin', {
         var me = this;
         me.map = map;
         me.layer = new esri.layers.ArcGISDynamicMapServiceLayer("http://cetech.iptime.org:6080/arcgis/rest/services/Layer1_new/MapServer");
-		me.layer.id = me.workType + "_xyTotalLayer";
+		me.layer.id = "DynamicLayer";
 		me.map.addLayer(me.layer);
 		me.layer.visible = true;
 		dojo.connect(me.layer, "onUpdate", function(event){	
