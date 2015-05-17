@@ -21,7 +21,7 @@ Ext.define('Sgis.map.CoreMap', {
     	     	isDoubleClickZoom:false,
     	     	isPan:true,
     	 		logo:false,
-    	 		slider: false,
+    	 		slider: true,
     	 		autoResize: true
     		});
             
