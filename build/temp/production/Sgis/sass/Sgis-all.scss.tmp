@@ -1,4 +1,4 @@
-$image-search-path: '/Users/jonghonam/Git/sgis/build/production/Sgis/resources';
+$image-search-path: 'D:/ash/workspace/sgis/build/production/Sgis/resources';
 $theme-name:  'ext-theme-neptune' !default;
 $include-cmm-mixin-menu: true;
 $include-cmm-mixin-msg: true;
@@ -916,6 +916,7 @@ $include-sgis-store-area1store: true;
 $include-sgis-store-area2store: true;
 $include-sgis-store-area3store: true;
 $include-sgis-view-center-center: true;
+$include-sgis-view-center-centercontroller: true;
 $include-sgis-view-east-east: true;
 $include-sgis-view-main-main: true;
 $include-sgis-view-main-maincontroller: true;
