@@ -29,7 +29,9 @@ Ext.define('Sgis.map.DynamicLayerAdmin', {
     	}
     	var layers = [];
     	Ext.each(selectInfo, function(selectObj, index) {
-    		layers.push(selectObj.data.id);
+    		if(!isNaN(selectObj.data.id)){
+    			layers.push(selectObj.data.id);
+    		}
 			if(index==selectInfo.length-1){
 				me.layer.setVisibleLayers(layers);
 			}

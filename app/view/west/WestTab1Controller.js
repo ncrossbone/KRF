@@ -23,11 +23,12 @@ Ext.define('Sgis.view.west.WestTab1Controller', {
 	},
 	
 	checkAllChildren: function(node, checked) {
+		var me = this;
 		var children = node.childNodes;
 		Ext.each(children, function(child, index) {
 			child.set('checked', checked);
 			if(index==children.length-1){
-				Sgis.getApplication().fireEvent('dynamicLayerOnOff', this.getView().getChecked());
+				Sgis.getApplication().fireEvent('dynamicLayerOnOff', me.getView().getChecked());
 			}
 		});
 	}
