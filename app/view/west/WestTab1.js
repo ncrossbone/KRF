@@ -12,6 +12,8 @@ Ext.define('Sgis.view.west.WestTab1', {
 
 	bodyPadding: 10,
 	
+	autoScroll: true,
+	
 	layout: {
 		type: 'vbox',
 		align: 'stretch'
@@ -22,8 +24,7 @@ Ext.define('Sgis.view.west.WestTab1', {
 		controller: 'default-west-tab1',
 		rootVisible: false,
 		useArrows: true,
-		frame: true,
-		width: 340,
+		//frame: true,
 		rowLines: true,
 		bufferedRenderer: false,
 		store : Ext.create('Sgis.store.LayerTreeStore')

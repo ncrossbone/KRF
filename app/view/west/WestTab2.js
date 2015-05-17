@@ -98,8 +98,6 @@ Ext.define('Sgis.view.west.WestTab2', {
 			controller: 'default-west-tab2',
 			rootVisible: false,
 			useArrows: true,
-			frame: true,
-			width: 340,
 			rowLines: true,
 			bufferedRenderer: false,
 			store : Ext.create('Sgis.store.Layer2TreeStore')

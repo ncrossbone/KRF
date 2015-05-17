@@ -931,8 +931,6 @@ $include-sgis-view-west-west: true;
 $include-sgis-view-west-westcontroller: true;
 $include-sgis-view-west-westtab1: true;
 $include-sgis-view-west-westtab1controller: true;
-$include-sgis-view-west-westtab1tree: true;
-$include-sgis-view-west-westtab1treecontroller: true;
 $include-sgis-view-west-westtab2: true;
 $include-sgis-view-west-westtab2controller: true;
 /* including package ext-theme-base */

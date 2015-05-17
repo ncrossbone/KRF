@@ -14,7 +14,7 @@ Ext.define('Sgis.view.west.West', {
 	
 	title: 'Measures',
 	
-	width: 350,
+	width: 275,
 
 	split: true,
 
