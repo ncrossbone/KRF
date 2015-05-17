@@ -1,10 +1,12 @@
+/**
+ * Deprecated - To be removed
+ */
 Ext.define('Sgis.view.west.WestTab1Tree', {
 	
 	extend: 'Ext.tree.Panel',
 
 	requires: [ 
-		'Sgis.view.west.WestTab1TreeController', 
-		'Ext.data.TreeStore' 
+		'Sgis.view.west.WestTab1TreeController'
 	],
 	
 	xtype: 'app-default-west-tab1-tree',
@@ -25,17 +27,6 @@ Ext.define('Sgis.view.west.WestTab1Tree', {
 	
 	bufferedRenderer: false,
 	
-	initComponent: function() {
+	store : Ext.create('Sgis.store.LayerTreeStore')
 
-		Ext.apply(this, {
-			store: new Ext.data.TreeStore({
-				proxy: {
-					type: 'ajax',
-					url: 'resources/data/west/layer-tree-data.json'
-				}
-			})
-		});
-		
-		this.callParent();
-	}
 });

@@ -18,7 +18,11 @@ Ext.define('Sgis.Application', {
 	name: 'Sgis',
 
 	stores: [
-		// TODO: add global / shared stores here
+		'Sgis.store.LayerTreeStore',
+		'Sgis.store.Layer2TreeStore',
+		'Sgis.store.Area1Store',
+		'Sgis.store.Area2Store',
+		'Sgis.store.Area3Store'
 	],
 	
 	views : [

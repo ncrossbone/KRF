@@ -13,7 +13,7 @@ Ext.define('Sgis.view.center.Center', {
 			xtype: 'app-map-coreMap',
 			width: '100',
 			height: '100%'
-		}, 
+		}
 	]
 	
 });

@@ -7,7 +7,11 @@
 
     <title>SGIS</title>
 
+	<link rel="stylesheet" href="http://js.arcgis.com/3.13/dijit/themes/claro/claro.css">
+	<link rel="stylesheet" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+	
     <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script type="text/javascript" src="http://js.arcgis.com/3.13/"></script>
     <script type="text/javascript">var Ext=Ext||{};Ext.manifest=Ext.manifest||"app.json";Ext=Ext||{};
 Ext.Boot=Ext.Boot||function(j){function k(a){if(a.$isRequest)return a;a=a.url?a:{url:a};var b=a.url;p(a,{urls:b.charAt?[b]:b,charset:a.charset||d.config.charset});p(this,a)}function r(a){if(a.$isEntry)return a;var b=a.charset||d.config.charset,c=Ext.manifest,c=c&&c.loader,e=void 0!==a.cache?a.cache:c&&c.cache,m;void 0===e&&(e=!d.config.disableCaching);!1===e?m=+new Date:!0!==e&&(m=e);m&&(c=c&&c.cacheParam||d.config.disableCachingParam,m=c+"\x3d"+m);p(a,{charset:b,buster:m,requests:[]});p(this,a)}
 var h=document,f=function(a,b,c){c&&f(a,c);if(a&&b&&"object"==typeof b)for(var e in b)a[e]=b[e];return a},t={disableCaching:/[?&](?:cache|disableCacheBuster)\b/i.test(location.search)||!/http[s]?\:/i.test(location.href)||/(^|[ ;])ext-cache=1/.test(h.cookie)?!1:!0,disableCachingParam:"_dc",loadDelay:!1,preserveScripts:!0,charset:void 0},v=/\.css(?:\?|$)/i,u=h.createElement("a"),q="undefined"!==typeof window,s={browser:q,node:!q&&"function"===typeof require,phantom:"undefined"!==typeof phantom&&phantom.fs},

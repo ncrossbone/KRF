@@ -1,6 +1,10 @@
 Ext.define('Sgis.view.west.WestTab2', {
 	
 	extend: 'Ext.container.Container',
+	
+	requires: [
+		'Sgis.view.west.WestTab2Controller'
+	],
 
 	xtype: 'app-default-west-tab2',
 
@@ -90,7 +94,15 @@ Ext.define('Sgis.view.west.WestTab2', {
 		}, {
 			title: '레이어',
 			hideCollapseTool: true,
-			html: '레이어'
+			xtype: 'treepanel',
+			controller: 'default-west-tab2',
+			rootVisible: false,
+			useArrows: true,
+			frame: true,
+			width: 340,
+			rowLines: true,
+			bufferedRenderer: false,
+			store : Ext.create('Sgis.store.Layer2TreeStore')
 		}]
 	}]
 

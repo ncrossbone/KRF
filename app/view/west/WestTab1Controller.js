@@ -1,14 +1,14 @@
 /**
- * Deprecated - To be removed
- */
-Ext.define('Sgis.view.west.WestTab1TreeController', {
+* West Tab1 Tree Controller
+*/
+Ext.define('Sgis.view.west.WestTab1Controller', {
 	
 	extend: 'Ext.app.ViewController',
 
-	alias: 'controller.default-west-tab1-tree',
+	alias: 'controller.default-west-tab1',
 
 	control: {
-		'app-default-west-tab1-tree': {
+		'treepanel': {
 			checkchange: 'onCheckChanged'
 		}
 	},
