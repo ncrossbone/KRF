@@ -1,10 +1,20 @@
 Ext.define('Sgis.view.south.South', {
 	
-	extend: 'Ext.panel.Panel',
+	extend: 'Ext.tab.Panel',
+	
+	requires: [
+		'Sgis.view.south.SearchData1Grid'
+	],
 	
 	xtype: 'app-default-south',
 	
+	layout: 'card',
+	
+	id: 'south',
+	
 	height: 250,
+	
+	plain: true,
 	
 	split: true,
 	

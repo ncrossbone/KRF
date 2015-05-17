@@ -4,7 +4,7 @@
 Ext.define('Sgis.view.west.WestTab2Controller', {
 	
 	extend: 'Ext.app.ViewController',
-
+	
 	alias: 'controller.default-west-tab2',
 	
 	control: {
@@ -55,17 +55,28 @@ Ext.define('Sgis.view.west.WestTab2Controller', {
 	},
 	
 	onCheckChanged: function(node, checked, eOpts) {
-		SGIS.msg.alert('Selected id : ' + node.get('id') + ', text : ' + node.get('text') + ', Checked : ' + checked);
-		
 		if(!node.get('leaf')) {
 			this.checkAllChildren(node, checked);
+		} else {
+			this.layerSearchData(node, checked);
 		}
 	},
 	
 	checkAllChildren: function(node, checked) {
 		var children = node.childNodes;
+		var self = this;
 		Ext.each(children, function(child) {
 			child.set('checked', checked);
+			self.layerSearchData(node, checked);
 		});
+	},
+	
+	layerSearchData: function(node, checked) {
+		if(checked) {
+			SGIS.addSearchGrid('Sgis.view.south.SearchData1Grid', {title : node.get('text')});
+			
+		} else {
+			SGIS.removeSearchGrid('Sgis.view.south.SearchData1Grid');
+		}
 	}
 });

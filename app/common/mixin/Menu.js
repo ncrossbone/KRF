@@ -22,9 +22,7 @@ Ext.define('Cmm.mixin.Menu', function() {
 
 		if (current.setParams) {
 			current.setParams(params || current.getParams());
-		} /*else {
-			SGIS.history.add(view, params);
-		}*/
+		}
 
 		content.fireEvent('showcontent', content, screen);
 	}
@@ -52,9 +50,6 @@ Ext.define('Cmm.mixin.Menu', function() {
 					screen.show();
 				}
 			} catch (e) {
-				/*HF.error(T('error.LOAD-FAILURE', {
-					view: view
-				}), e);*/
 				console.log(e);
 				return;
 			}
@@ -64,10 +59,55 @@ Ext.define('Cmm.mixin.Menu', function() {
 			screen.setParams(params);
 		}
 	}
+	
+	function addSearchGrid(view, params, config) {
+		var south = Ext.getCmp('south');
+		var current = null;
+		
+		Ext.each(south.getLayout().getLayoutItems(), function(comp) {
+			var className = Ext.getClass(comp).getName();
+			if(className == view) {
+				current = comp;
+				return false;
+			}
+		});
+		
+		if(!current) {
+			current = Ext.create(view, config);
+			south.add(current);
+			south.getLayout().setActiveItem(current);
+			south.expand();
+		}
+
+		if (current.setParams) {
+			current.setParams(params || current.getParams());
+		}
+
+		south.fireEvent('showcontent', content, screen);
+	}
+	
+	function removeSearchGrid(view) {
+		var south = Ext.getCmp('south');
+		var current = null;
+		
+		Ext.each(south.getLayout().getLayoutItems(), function(comp) {
+			var className = Ext.getClass(comp).getName();
+			if(className == view) {
+				current = comp;
+				return false;
+			}
+		});
+		
+		if(current) {
+			south.remove(current);
+		}		
+	}
 
 	return {
 		show: show,
-		popup: popup
+		popup: popup,
+		addSearchGrid: addSearchGrid,
+		removeSearchGrid: removeSearchGrid
 	};
 
 }());
