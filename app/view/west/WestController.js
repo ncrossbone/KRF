@@ -4,14 +4,19 @@
 Ext.define('Sgis.view.west.WestController', {
 	
 	extend: 'Ext.app.ViewController',
+	
+	requires: [ 
+		'Sgis.view.west.LayerInfoPopupGrid',
+		'Sgis.view.west.ScaleInfoPopupGrid'
+	],
 
 	alias: 'controller.default-west',
 
 	onClickWestLayer: function() {
-		SGIS.msg.alert('레이어출처 Clicked!');
+		SGIS.popup('Sgis.view.west.LayerInfoPopupGrid');
 	},
 	
 	onClickWestScale: function() {
-		SGIS.msg.alert('축척정보 Clicked!');
+		SGIS.popup('Sgis.view.west.ScaleInfoPopupGrid');
 	}
 });

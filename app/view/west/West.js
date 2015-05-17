@@ -16,11 +16,7 @@ Ext.define('Sgis.view.west.West', {
 	
 	width: 275,
 
-	split: true,
-
 	collapsible: true,
-	
-	resizable: true,
 	
 	items: [{
 		xtype: 'app-default-west-tab1'

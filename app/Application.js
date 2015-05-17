@@ -22,7 +22,8 @@ Ext.define('Sgis.Application', {
 		'Sgis.store.Layer2TreeStore',
 		'Sgis.store.Area1Store',
 		'Sgis.store.Area2Store',
-		'Sgis.store.Area3Store'
+		'Sgis.store.Area3Store',
+		'Sgis.store.LayerInfoStore'
 	],
 	
 	views : [
@@ -47,10 +48,10 @@ Ext.define('Sgis.Application', {
 			xtype : 'app-default-west'
 		});
 		
-		main.add({
+		/*main.add({
 			region: 'east',
 			xtype : 'app-default-east'
-		});
+		});*/
 		
 		main.add({
 			region: 'south',

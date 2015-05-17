@@ -28,9 +28,46 @@ Ext.define('Cmm.mixin.Menu', function() {
 
 		content.fireEvent('showcontent', content, screen);
 	}
+	
+	function popup(view, params, config) {
+		var screen = null;
+
+		if (Ext.isString(view)) {
+
+			try {
+				if (!Ext.ClassManager.get(view)) {
+					var controller = view.replace('.view.', '.controller.');
+					Ext.syncRequire(controller);
+					App.getApplication()
+						.getController(controller);
+				}
+
+				screen = Ext.create(view, Ext.merge({
+					modal: true
+				}, config));
+
+				if (config && config.by) {
+					screen.showBy(config.by)
+				} else {
+					screen.show();
+				}
+			} catch (e) {
+				/*HF.error(T('error.LOAD-FAILURE', {
+					view: view
+				}), e);*/
+				console.log(e);
+				return;
+			}
+		}
+
+		if (screen.setParams) {
+			screen.setParams(params);
+		}
+	}
 
 	return {
-		show: show
+		show: show,
+		popup: popup
 	};
 
 }());

@@ -2,6 +2,10 @@ Ext.define('Sgis.CommonModule', {
 	
 	alternateClassName : ['SGIS'],
 	
+	requires: [
+		'Cmm.view.Popup'
+	],
+	
 	singleton : true,
 
 	mixins : {

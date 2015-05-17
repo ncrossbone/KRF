@@ -14,7 +14,7 @@ Ext.define('Sgis.view.south.South', {
 	
 	resizable: true,
 	
-	title: 'South',
+	frame: true,
 	
-	html: 'This is South'
+	title: '검색결과'
 });
