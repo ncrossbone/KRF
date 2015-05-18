@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /Users/heartyoh/git/sgis/app.js
+// @require /Users/jonghonam/Git/sgis/app.js
