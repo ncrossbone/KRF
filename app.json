@@ -33,6 +33,9 @@
      * The name of the theme for this application.
      */
     
+    /**
+     * ext-theme-neptune, ext-theme-crisp, ext-theme-classic, ext-theme-gray, ext-theme-neptune-touch, ext-theme-crisp-touch
+     */
     "theme": "ext-theme-neptune",
     
     /**
