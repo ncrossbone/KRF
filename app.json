@@ -40,7 +40,7 @@
     
     /**
      * The list of required packages (with optional versions; default is "latest").
-     *s
+     *
      * For example,
      *
      *      "requires": [
