@@ -1,7 +1,7 @@
 /**
 * West Controller
 */
-Ext.define('Sgis.view.center.CenterController', {
+Ext.define('KRF.view.center.CenterController', {
 	
 	extend: 'Ext.app.ViewController',
 

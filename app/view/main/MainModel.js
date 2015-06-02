@@ -1,14 +1,14 @@
 /**
  * This class is the view model for the Main view of the application.
  */
-Ext.define('Sgis.view.main.MainModel', {
+Ext.define('KRF.view.main.MainModel', {
     extend: 'Ext.app.ViewModel',
 
     alias: 'viewmodel.main',
 
     data: {
-        name: 'SID Portal',
-		app_title: '토양지하수 정보시스템',
-		brand_image: './resources/images/site_brand.png'
+        name: 'KRF Portal',
+		app_title: 'KRF',
+		nier_logo: './resources/images/nier_logo.png'
     }
 });

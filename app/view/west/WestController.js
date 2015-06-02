@@ -1,7 +1,7 @@
 /**
 * West Controller
 */
-Ext.define('Sgis.view.west.WestController', {
+Ext.define('KRF.view.west.WestController', {
 	
 	extend: 'Ext.app.ViewController',
 	
@@ -12,11 +12,14 @@ Ext.define('Sgis.view.west.WestController', {
 
 	alias: 'controller.default-west',
 
-	onClickWestLayer: function() {
-		SGIS.popup('Sgis.view.west.LayerInfoPopupGrid');
+	onClickWestLayer: function(b, e, arg1) {
+		//alert(b.params[0]);
+		Ext.create('Cmm.view.Window_Center', {
+			params: b.params
+		});
 	},
 	
 	onClickWestScale: function() {
-		SGIS.popup('Sgis.view.west.ScaleInfoPopupGrid');
+		KRF.popup('Sgis.view.west.ScaleInfoPopupGrid');
 	}
 });

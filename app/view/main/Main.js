@@ -3,15 +3,16 @@
 * "autoCreateViewport" property. That setting automatically applies the "viewport"
 * plugin to promote that instance of this class to the body element.
 */
-Ext.define('Sgis.view.main.Main', {
+Ext.define('KRF.view.main.Main', {
 	
 	extend: 'Ext.container.Container',
 	
 	plugins: 'viewport',
+	renderTo: Ext.getBody(),
 	
 	requires: [
-		'Sgis.view.main.MainController',
-		'Sgis.view.main.MainModel'
+		'KRF.view.main.MainController',
+		'KRF.view.main.MainModel'
 	],
 
 	xtype: 'app-main',
@@ -29,7 +30,7 @@ Ext.define('Sgis.view.main.Main', {
 	items: [{
 		xtype: 'container',
 		id: 'content',
-		region: 'center',
+		//region: 'center',
 		layout: 'card'
 	}]
 	

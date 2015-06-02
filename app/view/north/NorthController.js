@@ -1,7 +1,7 @@
 /**
 * North Controller
 */
-Ext.define('Sgis.view.north.NorthController', {
+Ext.define('KRF.view.north.NorthController', {
 	extend: 'Ext.app.ViewController',
 
 	alias: 'controller.default-north',

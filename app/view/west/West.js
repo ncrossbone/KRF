@@ -3,7 +3,8 @@ Ext.define('Sgis.view.west.West', {
 	extend: 'Ext.tab.Panel',
 	
 	requires: [
-		'Sgis.view.west.WestController',
+		//'Sgis.view.west.WestController',
+		'KRF.view.west.WestController',
 		'Sgis.view.west.WestTab1',
 		'Sgis.view.west.WestTab2'
 	],
@@ -17,6 +18,9 @@ Ext.define('Sgis.view.west.West', {
 	width: 275,
 
 	collapsible: true,
+	
+	cls: 'verticaltab',
+	tabBar: {docked: 'left'},
 	
 	items: [{
 		xtype: 'app-default-west-tab1'

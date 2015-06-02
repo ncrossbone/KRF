@@ -2,7 +2,7 @@
     /**
      * The application's namespace.
      */
-    "name": "Sgis",
+    "name": "KRF",
     
     /**
      * The version of the application.
@@ -30,13 +30,10 @@
     "framework": "ext",
 
     /**
-     * The name of the theme for this application.
+     * The name of the theme for this application. "krf-custom-theme"
      */
     
-    /**
-     * ext-theme-neptune, ext-theme-crisp, ext-theme-classic, ext-theme-gray, ext-theme-neptune-touch, ext-theme-crisp-touch
-     */
-    "theme": "ext-theme-neptune",
+    "theme": "ext-theme-classic",
     
     /**
      * The list of required packages (with optional versions; default is "latest").
@@ -56,13 +53,13 @@
     "sass": {
         /**
          * The root namespace to use when mapping *.scss files to classes in the
-         * sass/src and sass/var directories. For example, "Sgis.view.Foo" would
-         * map to "sass/src/view/Foo.scss". If we changed this to "Sgis.view" then
+         * sass/src and sass/var directories. For example, "KRF.view.Foo" would
+         * map to "sass/src/view/Foo.scss". If we changed this to "KRF.view" then
          * it would map to "sass/src/Foo.scss". To style classes outside the app's
          * root namespace, change this to "". Doing so would change the mapping of
-         * "Sgis.view.Foo" to "sass/src/Sgis/view/Foo.scss".
+         * "KRF.view.Foo" to "sass/src/KRF/view/Foo.scss".
          */
-        "namespace": "Sgis"
+        "namespace": "KRF"
     },
 
     /**

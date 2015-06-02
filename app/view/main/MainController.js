@@ -3,7 +3,7 @@
 * "autoCreateViewport" property. That setting automatically applies the "viewport"
 * plugin to promote that instance of this class to the body element.
 */
-Ext.define('Sgis.view.main.MainController', {
+Ext.define('KRF.view.main.MainController', {
 	
 	extend: 'Ext.app.ViewController',
 

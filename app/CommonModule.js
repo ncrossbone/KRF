@@ -1,6 +1,6 @@
-Ext.define('Sgis.CommonModule', {
+Ext.define('KRF.CommonModule', {
 	
-	alternateClassName : ['SGIS'],
+	alternateClassName : ['KRF'],
 	
 	requires: [
 		'Cmm.view.Popup'

@@ -1,4 +1,4 @@
-Ext.define('Sgis.map.CoreMap', {
+Ext.define('KRF.map.CoreMap', {
 	extend: 'Ext.Component',
 	
 	xtype: 'app-map-coreMap',
