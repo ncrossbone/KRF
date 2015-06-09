@@ -14,7 +14,8 @@ Ext.define('KRF.view.west.WestController', {
 
 	onClickWestLayer: function(b, e, arg1) {
 		//alert(b.params[0]);
-		Ext.create('Cmm.view.Window_Center', {
+		Ext.create('KRF.view.common.DataWindow', {
+			//stores: 'GridStoreTest',
 			params: b.params
 		});
 	},

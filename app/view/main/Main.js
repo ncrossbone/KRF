@@ -7,31 +7,52 @@ Ext.define('KRF.view.main.Main', {
 	
 	extend: 'Ext.container.Container',
 	
+	id: 'view-main',
+	name: 'view-main',
+	xtype: 'view-main',
+	
 	plugins: 'viewport',
 	renderTo: Ext.getBody(),
-	
-	requires: [
-		'KRF.view.main.MainController',
-		'KRF.view.main.MainModel'
-	],
-
-	xtype: 'app-main',
-
-	controller: 'main',
-	
-	viewModel: {
-		type: 'main'
-	},
 
 	layout: {
 		type: 'border'
 	},
+	
+	initComponent: function(){
 
-	items: [{
-		xtype: 'container',
-		id: 'content',
-		//region: 'center',
-		layout: 'card'
-	}]
+		this.items = [{
+			xtype: 'app-default-north',
+			region: 'north',
+			header: false,
+			id: 'north-panel',
+			title: 'north panel',
+			collapsible: true
+		}, {
+			xtype: 'panel',
+			id: 'center-panel',
+			region: 'center',
+			layout: 'absolute',
+			width: '100%',
+			height: '100%',
+			items: [{
+				xtype: 'app-default-center',
+				region: 'center',
+				width: '100%',
+				height: '100%'
+			}]
+		}, {	
+			xtype: 'west-main-tab',
+			region: 'west',
+			//draggable: true,
+			//id: 'west-panel',
+			//title: 'west panel'
+		}];
+		
+		// 툴바 생성
+		Ext.create('KRF.view.common.MapToolbar');
+		
+		this.callParent();
+	
+	}
 	
 });

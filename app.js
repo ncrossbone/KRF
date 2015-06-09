@@ -1,21 +1,25 @@
 Ext.Loader.setConfig({
 	enabled : true,
 	paths : {
-		'Cmm' : 'app/common'
+		//'Cmm' : 'app/common'
 	}
 });
 
 Ext.require([
-         	'KRF.CommonModule'
+             'KRF.view.common.DataWindow',
+             'KRF.view.common.DataGrid'
+         	//'KRF.CommonModule'
          ]);
 
 Ext.application({
 	
-    name: 'KRF_Test',
+    name: 'KRF',
+    
+    stores: ['GridStoreTest'],
     
 	launch: function () {
 		
-		var main = Ext.create('KRF.view.main.Main_Test');
+		var main = Ext.create('KRF.view.main.Main');
 		
 	}
 
